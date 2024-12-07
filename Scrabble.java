@@ -70,7 +70,7 @@ public class Scrabble {
 		if (word.length() == HAND_SIZE) {
             letterValue = letterValue + 50;
         }
-		if (word.contains("runi")) {
+		if (word.toLowerCase().contains("runi")) {
 			letterValue = letterValue + 1000;
         }
 		return letterValue;
@@ -86,7 +86,7 @@ public class Scrabble {
 		newHand = newHand.insert(randomIndex, "e");
 		randomIndex = (int)(Math.random()*(newHand.length() + 1));
 		newHand = newHand.insert(randomIndex, "a");
-		return MyString.spacedString(newHand.toString());
+		return newHand.toString();
 	}
 	
     // Runs a single hand in a Scrabble game. Each time the user enters a valid word:

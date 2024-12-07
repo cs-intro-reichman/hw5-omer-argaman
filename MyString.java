@@ -68,9 +68,9 @@ public class MyString {
      * @return a string consisting of the characters of str, separated by spaces.
      */
     public static String spacedString(String str) {
-        String str2 = " ";
+        String str2 = "";
         if (str.length() == 0) {
-            return " ";
+            return "";
         }
         for (int i = 0; i < str.length() -1 ; i++) {
             str2 = str2 + str.charAt(i) + " ";
