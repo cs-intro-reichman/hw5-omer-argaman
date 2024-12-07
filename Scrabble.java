@@ -70,7 +70,7 @@ public class Scrabble {
 		if (word.length() == HAND_SIZE) {
             letterValue = letterValue + 50;
         }
-		if (word.toLowerCase().contains("runi")) {
+		if (word.equalsIgnoreCase("runi")) {
 			letterValue = letterValue + 1000;
         }
 		return letterValue;
@@ -128,7 +128,7 @@ public class Scrabble {
 					System.out.println();
 				}
 			} else {
-				System.out.println("Invalid word, you cannot construct this word with your hand.");
+				System.out.println("Invalid word. Try again.");
 				System.out.println();
 			}
 	}

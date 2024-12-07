@@ -95,7 +95,7 @@ public class MyString {
         for (int i = 0; i < n; i++) {
             random = random + abc.charAt((int) (26 * Math.random()));
         }
-        return spacedString(random);
+        return random;
     }
 
     public static String randomStringOfLettersNS(int n) {
