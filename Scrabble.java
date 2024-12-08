@@ -125,11 +125,11 @@ public class Scrabble {
 					//}
 				} else {
 					System.out.println("No such word in the dictionary. Try again.");
-					System.out.println();
+					//System.out.println();
 				}
 			} else {
 				System.out.println("Invalid word. Try again.");
-				System.out.println();
+				//System.out.println();
 			}
 	}
 		if (hand.length() == 0) {
